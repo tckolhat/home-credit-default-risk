@@ -1,0 +1,16 @@
+#!/bin/bash
+#####  Constructed by HPC everywhere #####
+#SBATCH --mail-user=deduggi@iu.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=5
+#SBATCH --time=0-10:00:00
+#SBATCH --mail-type=FAIL,BEGIN,END
+#SBATCH --job-name=hcdr_feature_selection
+
+######  Module commands #####
+
+
+
+######  Job commands go below this line #####
+python hcdr_feature_selection.py
